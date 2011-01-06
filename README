@@ -1,0 +1,5 @@
+django-python-identifier-field 
+
+Provides Django form and database fields to validate python identifiers.
+
+
