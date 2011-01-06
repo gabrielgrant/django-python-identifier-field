@@ -6,6 +6,7 @@ setup(
     author='Gabriel Grant',
     packages=[
         'python_identifier_field',
+        'python_identifier_field.db',
         'python_identifier_field.db.models',
     ],
     license='LGPL',
