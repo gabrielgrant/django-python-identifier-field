@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='django-python-identifier-field',
-    version='0.1.0dev',
+    version='0.1.1dev',
     author='Gabriel Grant',
     packages=[
         'python_identifier_field',

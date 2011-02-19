@@ -9,6 +9,9 @@ class PythonIdentifierField(CharField):
     description = _("String (up to %(max_length)s)")
     def __init__(self, *args, **kwargs):
         kwargs['max_length'] = kwargs.get('max_length', 50)
+        # Set db_index=True unless it's been set manually.
+        if 'db_index' not in kwargs:
+            kwargs['db_index'] = True
         super(PythonIdentifierField, self).__init__(*args, **kwargs)
 
     def formfield(self, **kwargs):

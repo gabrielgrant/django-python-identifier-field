@@ -2,4 +2,7 @@ django-python-identifier-field
 
 Provides Django form and database fields to validate python identifiers.
 
+Like a CharField, you can specify max_length. If max_length is not specified,
+the default length is 50.
 
+By default Field.db_index is set to True.
